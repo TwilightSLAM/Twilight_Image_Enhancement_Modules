@@ -1,4 +1,4 @@
-EnlightenGAN
+# EnlightenGAN
 
 To install the required package, you may run
 ```
