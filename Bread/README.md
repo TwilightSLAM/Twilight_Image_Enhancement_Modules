@@ -44,7 +44,13 @@ The images for testing can be downloaded in [this link](https://github.com/mingc
 * Testing: ```python test_Bread.py -m1 IAN -m2 ANSN -m3 FuseNet -m4 FuseNet --mef --comment Bread+NFM+ME[test] --batch_size 1 -m1w ./checkpoints/IAN_335.pth -m2w ./checkpoints/ANSN_422.pth -m3w ./checkpoints/FuseNet_MECAN_251.pth -m4w ./checkpoints/FuseNet_NFM_297.pth```
 * Remove NFM: ```python test_Bread_NoNFM.py -m1 IAN -m2 ANSN -m3 FuseNet --mef -a 0.10 --comment Bread+ME[test] --batch_size 1 -m1w ./checkpoints/IAN_335.pth -m2w ./checkpoints/ANSN_422.pth -m3w ./checkpoints/FuseNet_MECAN_251.pth```
 
-#### 4.3. Trained weights
+#### 4.3. Inference
+In order to perform inference, use
+```
+python Bread_inference.py --img_dir /path/to/img_dir --save_dir /path/to/save_dir --img_type png/jpg/jpeg
+```
+
+#### 4.4. Trained weights
 Please refer to [our release](https://github.com/mingcv/Bread/releases/tag/checkpoints). 
 
 ### 5. Quantitative comparison on eval15
